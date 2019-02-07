@@ -1,7 +1,4 @@
 /* -----------------------------------------------------------------------
- * Demonstration of how to write unit tests for dominion-base
- * Include the following lines in your makefile:
- *
  * cardtest2: cardtest2.c dominion.o rngs.o
  *      gcc -o cardtest2 -g  cardtest2.c dominion.o rngs.o $(CFLAGS)
  * -----------------------------------------------------------------------
