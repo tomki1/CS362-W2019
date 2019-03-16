@@ -87,6 +87,29 @@ unittest:
 	gcov dominion.c >> unittestresults.out
 	cat dominion.c.gov >> unittestresults.out
 
+cardtest1results: cardtest1
+
+	cardtest1
+	echo "-------------------" >> unittestresult.out
+	echo "cardtest1" >> unittestresult.out
+	gcov dominion.c >> unittestresult.out
+	echo "-------------------" unittestresult.out
+	cat dominion.c.gcov >> unittestresult.out
+	echo >> unittestresult.out
+        
+
+cardtest4results: cardtest4
+
+	cardtest4
+	echo "-------------------" >> unittestresult.out
+	echo "cardtest4" >> unittestresult.out
+	gcov dominion.c >> unittestresult.out
+	echo "-------------------" unittestresult.out
+	cat dominion.c.gcov >> unittestresult.out
+	echo >> unittestresult.out
+
+
+
 cardtestresults: cardtest1 cardtest4
 	rm -f unittestresult.out
 	echo "---------------------------------------------------" >> unittestresult.out
